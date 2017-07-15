@@ -1,0 +1,146 @@
+
+main,header,footer {
+  padding:0 150px;
+  font-size: 16px;
+  line-height: 22px;
+}
+a {
+  text-decoration:none;
+}
+ul {
+  padding:0;
+  margin:0;
+  list-style-image: url(../img/ul-line.png);
+  padding-left:35px;
+}
+.container {
+width:900px;
+padding:0 10px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-header {
+  height::85px;
+  margin-bottom:50px;
+}
+.nerds-logo {
+  float:left;
+  margin-right: 180px;
+  margin-top: 25px;
+}
+.min-menu {
+
+}
+.main-menu li {
+  display: inline-block;
+  margin-right:45px;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  margin-top:65px;
+}
+.main-menu li:last-child {
+  margin-right:0;
+}
+.main-menu li:nth-child(4) {
+  margin-right:60px;
+}
+.slider {
+  width:880px;
+  padding-bottom:70px;
+  margin-bottom:80px;
+}
+b.caption {
+  font-size:36px;
+  line-height: 36px;
+}
+.page {
+  height: 231px;
+}
+.page .page-info {
+  display:inline-block;
+  float:left;
+  width: 380px;
+  margin-right: 160px;
+}
+.about-us {
+  margin-bottom:72px;
+}
+.offer {
+  display: inline-block;
+  float:left;
+  width:240px;
+  margin-right:80px;
+}
+.offer img {
+  margin-bottom:30px;
+}
+.offer p {
+  margin-top: 25px;
+  margin-bottom:30px;
+}
+.offer-title {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight:medium;
+}
+
+.offer:last-child {
+  margin-right: 0;
+}
+.offers {
+  margin-bottom:80px;
+}
+.left-column {
+  display:inline-block;
+  width: 572px;
+  min-height:340px;
+  margin-right:50px;
+}
+.left-column p {
+  margin-bottom:50px;
+}
+.ul-title {
+  display: inline-block;
+  margin-bottom:30px;
+}
+.right-column {
+  display:inline-block;
+  width: 260px;
+  min-height:340px;
+}
+.right-column img {
+  margin-bottom:75px;
+}
+.advertisement li {
+  margin-bottom:30px;
+}
+.project {
+  display:inline-block;
+  height:90px;
+  float:left;
+  margin-right:120px;
+  weight:209px;
+}
+.project:last-child {
+  margin-right:0px;
+}
+.social {
+  display:inline-block;
+  float;left;
+  margin-right:29px;
+}
+
+.main-footer {
+  height:140px;
+  margin-top:80px;
+}
+.footer-text {
+  display:inline-block;
+  float:right;
+  width:560px;
+}
