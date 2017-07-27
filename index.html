@@ -3,14 +3,16 @@
   <head lang="ru">
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="clearfix">
     <header class="main-header">
       <div class="container">
-        <div class="nerds-logo">
-        <img src="img/nerds-logo.png" alt="Nerds logo" class="logo" width="139px" height="56px">
-       </div>
+        <div class="nerds-logo-main">
+          <img src="img/nerds-logo.png" alt="Nerds logo" class="logo" width="139px" height="56px">
+        </div>
         <ul class="main-menu">
           <li>
             <a href="#">СТУДИЯ</a>
@@ -25,69 +27,83 @@
             <a href="#">КОНТАКТЫ</a>
           </li>
           <li>
-          <img src="#" alt="backet icon" class="backet-icon" width="9,26px" height="17,39px">
-          <a href="#">КОРЗИНА</a>
+            <a href="#">
+              <div class="backet-icon"></div>
+              КОРЗИНА
+            </a>
         </li>
       </ul>
-    </div>
-    </header>
-    <main>
       <div class="slider">
-        <div class="continer">
-          <div class="page page-1">
-            <div class="page-info">
-            <b class="caption">Долго,дорого,скурпулезно</b>
-            <p>
-              Математически выверенный дизайн
-               для вашего сайта или мобильного приложения
-            </p>
-            <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
-            <img src="img/devices.svg" alt="first picture" class="page-1" width="338px" height="231px">
-          </div>
-          <!--<div class="page-2">
-            <b class="caption">
-            Любите&nbsp;ли вы&nbsp;математику, как любим её мы?
-            </b>
-            <p>
-              Нашим дизайнерам мы&nbsp;удаляем нейроны, ответственные
-               за&nbsp;креатив, чтобы дать им&nbsp;возможнсть все просчитать
-            </p>
-            <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
-            <img src="img/calculaters.svg" alt="calculater" width="230px" height="249px">
-          </div>
-          <div class="page-3">
-            <b class="caption">
-            Только наркотики,
-             только хардкор!
-            </b>
-            <p>
-            Все дизайнерские решения в&nbsp;нашей компании принимаются
-             только под воздействием качественных галлюциногенов
-            </p>
-            <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
-            <img src="img/robot.svg" alt="calculater" width="230px" height="249px">
-          </div>-->
-          <button type="button" name="slider"></button>
-          <button type="button" name="slider"></button>
-          <button type="button" name="slider"></button>
-        </div>
-      </div>
-        <div class="offers clearfix">
-          <div class="container">
-            <div class="offer web-site">
-              <img src="img/web-sites.svg" alt="web site" class="web-site" width="240px" height="124px">
-              <span class="offer-title">ВЕБ-САЙТЫ</span>
-              <p>
-                Мир никогда не будет прежним
-                 после того как увидит ваш сайт
-              </p>
-              <a href="#" class="button buy-red">ЗАКАЗАТЬ</a>
+        <div class="container">
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+        <div class="slides">
+           <div class="page page-1">
+              <div class="page-info">
+                <b class="caption">Долго, дорого,<br>скурпулезно</b>
+                <p>
+                  Математически выверенный дизайн
+                    для вашего сайта или мобильного приложения
+                </p>
+                <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
+              </div>
+              <img src="img/devices.svg" alt="first picture" class="page-1" width="338px" height="231px">
             </div>
-            <div class="offer app">
-              <img src="img/apps.svg" alt="app" class="app" width="240px" height="124px">
+            <div class="page page-2">
+              <div class="page-info">
+                <b class="caption">
+                  Любите&nbsp;ли вы&nbsp;математику, как любим её мы?
+                </b>
+                <p>
+                  Нашим дизайнерам мы&nbsp;удаляем нейроны, ответственные
+                    за&nbsp;креатив, чтобы дать им&nbsp;возможнсть все просчитать
+                </p>
+                <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
+              </div>
+             <img src="img/calculaters.svg" alt="calculater" width="230px" height="249px">
+            </div>
+            <div class="page page-3">
+              <div class="page-info">
+                <b class="caption">
+                  Только наркотики,
+                  только хардкор!
+                </b>
+                <p>
+                  Все дизайнерские решения в&nbsp;нашей компании принимаются
+                  только под воздействием качественных галлюциногенов
+                </p>
+                <a href="#" class="button to-know-more">УЗНАТЬ БОЛЬШЕ</a>
+              </div>
+              <img src="img/robot.svg" alt="calculater" width="333px" height="319px">
+             </div>
+        </div>
+        </div>
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+     </div>
+     </header>
+     <main class="container">
+       </div>
+         <div class="offers clearfix">
+           <div class="container">
+             <div class="offer web-site">
+               <img src="img/web-sites.svg" alt="web site" class="web-site" width="240px" height="124px">
+               <span class="offer-title">ВЕБ-САЙТЫ</span>
+               <p>
+                 Мир никогда не будет прежним
+                 после того как увидит ваш сайт
+               </p>
+               <a href="#" class="button buy-red">ЗАКАЗАТЬ</a>
+             </div>
+             <div class="offer app">
+               <img src="img/apps.svg" alt="app" class="app" width="240px" height="124px">
               <span class="offer-title">ПРИЛОЖЕНИЯ</span>
-              <p>Покорите <nobr>топ-10</nobr> приложений
+              <p>
+                 Покорите <nobr>топ-10</nobr> приложений
                  в&nbsp;AppStore и&nbsp;Google Play
               </p>
               <a href="#" class="button buy-green">ЗАКАЗАТЬ</a>
@@ -107,76 +123,88 @@
           <div class="container">
             <div class="left-column">
                 <b class="caption">Мы&nbsp;&mdash; маленькая, но&nbsp;гордая <nobr>дизайн-студия</nobr> из&nbsp;Краснодара.</b>
-              <p>
-                Исповедуем принципы минимализма и&nbsp;чистоты.
-                 Ставим математическийрасчет выше креатива. Работаем не&nbsp;покладая рук, как роботы.
-              </p>
-              <span class="ul-title">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</span>
-              <ul class="advertisement">
-                <li><nobr>Веб-сайтов</nobr> любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-              </ul>
-            </div>
-            <div class="right-column">
-              <img src="img/nerds-since.svg" alt="logo" class="logo" width="240px" height="119px">
-
-              <span class="ul-title">КАК МЫ РАБОТАЕМ:</span>
-              <ul class="advertisement">
-                <li>
-                  С самоотдачей 146%
-                </li>
-                <li>
-                  Соблюдая сроки на 100%
-                </li>
-                <li>
-                  По предоплате 50%
-                </li>
-              </ul>
-            </div>
+                <p>
+                  Исповедуем принципы минимализма и&nbsp;чистоты.
+                   Ставим математическийрасчет выше креатива. Работаем не&nbsp;покладая рук, как роботы.
+                </p>
+                <span class="ul-title">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</span>
+                <ul class="advertisement">
+                  <li><nobr>Веб-сайтов</nobr> любой сложности</li>
+                  <li>Мобильных приложений для iOS и Android</li>
+                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+              </div>
+              <div class="right-column">
+                <img src="img/nerds-since.svg" alt="logo" class="logo" width="240px" height="119px">
+                <span class="ul-title">КАК МЫ РАБОТАЕМ:</span>
+                <ul class="advertisement">
+                  <li>
+                    С самоотдачей 146%
+                  </li>
+                  <li>
+                    Соблюдая сроки на 100%
+                  </li>
+                  <li>
+                    По предоплате 50%
+                  </li>
+                </ul>
+             </div>
           </div>
         </div>
         <div class="another-projects">
-          <div class="container"
+          <div class="container">
             <div class="project">
               <a href="#"><img src="img/glukhanko.svg" alt="glukhanko" width="198px" height="37px"> </a>
             </div>
             <div class="project">
-              <a href="#"> <img src="img/html-academy.svg" alt="html academy" width="199px" height="68px">
-              </a>
+              <a href="#"> <img src="img/html-academy.svg" alt="html academy" width="199px" height="68px"></a>
             </div>
-            <div class="project"><a href="#">
-              <img src="img/borodinsky.svg" alt="borodinsky" width="209px" height="90px"> </a>
-          </div>
+            <div class="project">
+              <a href="#"><img src="img/borodinsky.svg" alt="borodinsky" width="209px" height="90px"> </a>
+            </div>
           </div>
        </div>
-      <div class="adress">
-        <div class="map">
-         <img src="img/nerds-mark.svg" alt="neds mark" width="231px" height="190px">
-        </div>
-       <div class"container">
+      </main>
+      <div class="adress container">
           <div class="adress-info">
-            <span>NЁRDS DESIGN STUDIO</span>
+            <span class="caption">NЁRDS DESIGN STUDIO</span>
             <p>
               191186,<nobr>Санкт-Петербург</nobr>,<br />
               ул. Б.Конюшенная, д.19/8<br />
+            </p>
+            <p>
               тел.<nobr>+7(812)275-75-75</nobr>
             </p>
             <a href="#" class="button write-to-us">НАПИШИТЕ НАМ</a>
           </div>
-        </div>
-      </div>
-      <footer class="main-footer clearfix">
-        <div class="container">
-            <a class="social vk"> <img src="img/circle.svg" alt="circle"></a>
-            <a class="social fb"><img src="img/circle.svg" alt="circle"></a>
-            <a class="social inst"><img src="img/circle.svg" alt="circle"></a>
-           <div class="footer-text">
-            <b class="caption">Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей</p>
+       </div>
+       <footer class="main-footer clearfix">
+         <div class="container">
+            <a href="#" class="social"><div class="circle vk"></div></a>
+            <a href="#" class="social"><div class="circle fb"></div></a>
+            <a href="#" class="social"><div class="circle inst"></div></a>
+            <div class="footer-text">
+              <b class="caption">Давайте дружить, это выгодно!</b>
+              <p>Скидка 10% для друзей из социальных сетей</p>
+             </div>
           </div>
-        </div>
-      </footer>
-    </main>
+       </footer>
+       <div class="write-us-form">
+         <form class="write-us">
+           <div class="name-input">
+             <label for="name">Ваше имя:</label>
+               <input type="text" placeholder="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА" id="name">
+           </div>
+           <div class="e-mail-input">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" id="e-mail">
+           </div>
+           <div class="letter-area">
+             <label for="write-us-area"> Текст письма:</label><br>
+             <textarea name="name" rows="5" cols="50" id="write-us-area">В СВОБОДНОЙ ФОРМЕ</textarea>
+           </div>
+           <input type="submit" class="button write-us" value="ОТПРАВИТЬ">
+        </form>
+      </div>
   </body>
 </html>
