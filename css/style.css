@@ -446,7 +446,8 @@ background-position: 17px 45%;
   background-color: white;
   padding-top: 52px;
   box-shadow: 0 0 50px 0 grey;
-  display:none;
+  z-index:100;
+  display: none;
 }
 .write-us-form input[type="text"] {
   box-sizing:border-box;
@@ -505,6 +506,40 @@ background-position: 17px 45%;
   display: inline-block;
   float: left;
   margin-left: 80px;
+}
+.exit_button {
+  position:absolute;
+  display: block;
+  width: 42px;
+  height:42px;
+  background-color:#fb565a;
+  border-radius: 50%;
+  right:5px;
+  top:5px;
+}
+.write-us-form-open {
+  display:block;
+}
+
+.exit_button::after {
+  content: " ";
+  width:5px;
+  height:25px;
+  background-color:white;
+  position:absolute;
+  transform: rotate(45deg);
+  top:9px;
+  left:19px;
+}
+.exit_button::before {
+  content: " ";
+  width:5px;
+  height:25px;
+  background-color:white;
+  position:absolute;
+  transform: rotate(-45deg);
+  top:9px;
+  left:19px;
 }
 .second-header {
   background-color: #eeeeee;
@@ -815,4 +850,16 @@ input.btn {
   padding: 0;
   padding-top: 10px;
   margin-right: 10px;
+}
+.overlay {
+  position:absolute;
+  width:100%;
+  height:230%;
+  background-color: rgba(238, 238, 238, 0.5);
+  z-index:10;
+  top:0;
+  display:none;
+}
+.overlay-open {
+  display:block;
 }
